@@ -31,6 +31,7 @@ int main(void)
 			k++;
 		}
 		n++;
+		k = '1';
 	}
 	putchar('\n');
 	return (0);
