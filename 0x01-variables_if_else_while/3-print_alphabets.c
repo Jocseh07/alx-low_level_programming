@@ -12,12 +12,18 @@ int main(void)
 {
 	/* your code goes there */
 	char alphabet = 'a';
+	char u = 'A';
 
 	while (alphabet <= 'z')
 	{
 		putchar(alphabet);
 		alphabet++;
 	}
+	while (u <= 'Z')
+	{
+		putchar(u);
+		u++;
+	}
 	putchar('\n');
 	return (0);
-
+}
