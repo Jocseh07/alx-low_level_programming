@@ -9,23 +9,22 @@
 int main(void)
 {
 	unsigned long int i, j, k, l;
-
+	
 	i = 2;
 	j = 1;
 
-	for (k = 0; k < 98; k++)
+	printf("%lu", j);
+	l = j + i;
+	j = i;
+	i = l;
+	for (k = 0; k < 97; k++)
 	{
-		if (j != (16008811023750101250))
-		{
-			printf("%lu, ", j);
-		} else
-		{
-			printf("%lu\n", j);
-		}
+		printf(", %lu", j);
 		l = j + i;
 		j = i;
 		i = l;
 	}
+	printf("\n");
 
 	return (0);
 }
