@@ -9,9 +9,10 @@
 int main(void)
 {
 	unsigned long int i, j, k, l;
+
 	i = 2;
 	j = 1;
-	
+
 	for (k = 0; k < 98; k++)
 	{
 		if (j != 20365011074)
@@ -28,4 +29,3 @@ int main(void)
 
 	return (0);
 }
-
