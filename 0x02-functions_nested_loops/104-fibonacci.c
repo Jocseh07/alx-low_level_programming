@@ -8,19 +8,17 @@
 
 int main(void)
 {
-	unsigned long int i, n, m, k, n1, n2, m1, m2;
+	unsigned long int i, m, n, m1, m2, n1, n2;
 
 	m = 1;
 	n = 2;
 
 	printf("%lu", m);
-	n = m + n;
-	m = n - m;
 
-	for (k = 0; k < 91; k++)
+	for (i = 1; i < 91; i++)
 	{
-		printf(", %lu", m);
-		n = m + n;
+		printf(", %lu", n);
+		n = n + m;
 		m = n - m;
 	}
 
