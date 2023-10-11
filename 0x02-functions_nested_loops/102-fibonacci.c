@@ -9,9 +9,10 @@
 int main(void)
 {
 	long int i, j, k, l;
+	
 	i = 2;
 	j = 1;
-	
+
 	for (k = 0; k < 50; k++)
 	{
 		if (j != 20365011074)
