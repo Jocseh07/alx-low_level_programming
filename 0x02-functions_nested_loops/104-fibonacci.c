@@ -15,7 +15,7 @@ int main(void)
 
 	for (k = 0; k < 98; k++)
 	{
-		if (j != 20365011074)
+		if (j != (16008811023750101250))
 		{
 			printf("%lu, ", j);
 		} else
