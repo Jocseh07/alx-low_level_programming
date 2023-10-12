@@ -7,7 +7,7 @@
  * Return: the multiple of the 2 integers
  */
 
-int mul(int a, int b);
+int mul(int a, int b)
 {
 	return (a * b);
 }
