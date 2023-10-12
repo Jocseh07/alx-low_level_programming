@@ -5,10 +5,10 @@
  * if multiple of 3 fizz
  * if multiple of 5 buzz
  * if multiple of 3 and 5 fizzbuzz
- * Return 0
+ * Return: 0 
  */
 
-void main(void)
+int main(void)
 {
 	int a;
 
@@ -37,4 +37,5 @@ void main(void)
 		}
 
 	}
+	return (0);
 }
