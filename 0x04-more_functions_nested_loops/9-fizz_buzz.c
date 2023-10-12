@@ -5,7 +5,7 @@
  * if multiple of 3 fizz
  * if multiple of 5 buzz
  * if multiple of 3 and 5 fizzbuzz
- * Return: 0 
+ * Return: 0
  */
 
 int main(void)
@@ -28,14 +28,14 @@ int main(void)
 			printf("%d", a);
 		}
 
-		if (a < 100)
+		if (a != 100)
 		{
 			printf(" ");
 		} else
 		{
 			printf("\n");
 		}
-
 	}
+
 	return (0);
 }
