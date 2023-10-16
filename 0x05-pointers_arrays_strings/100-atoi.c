@@ -9,15 +9,5 @@
 
 int _atoi(char *s)
 {
-	int l, i;
-	char c;
-
-	l = strlen(s);
-
-	for (i = 0; i < l; i++)
-	{
-		c += atoi(s[i]);
-	}
-
-	return (c);
+	return (atoi(s));
 }
