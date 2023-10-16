@@ -15,6 +15,6 @@ void rev_string(char *s)
 
 	for (l = i - 1; i >= 0; l--)
 	{
-		strcat(i, c);
+		strcat(s[i], c);
 	}
 }
