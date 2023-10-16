@@ -10,7 +10,7 @@ void puts_half(char *str)
 {
 	int i, l;
 
-	l = strlen(str) + 1;
+	l = strlen(str) - 1;
 
 	if (l % 2 == 1)
 	{
@@ -27,4 +27,4 @@ void puts_half(char *str)
 	}
 
 	_putchar('\n');
-}
+
