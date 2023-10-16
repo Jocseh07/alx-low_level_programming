@@ -8,5 +8,15 @@
 
 int _atoi(char *s)
 {
-	return (atoi(s));
+	int l, i;
+	char c;
+
+	l = strlen(s);
+
+	for (i = 0; i < l; i++)
+	{
+		strcat(c, atoi(s[i]));
+	}
+
+	return (c);
 }
