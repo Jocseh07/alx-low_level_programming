@@ -16,7 +16,7 @@ int _atoi(char *s)
 
 	for (i = 0; i < l; i++)
 	{
-		strcat(c, atoi(*s[i]));
+		c += atoi(*s[i]);
 	}
 
 	return (c);
