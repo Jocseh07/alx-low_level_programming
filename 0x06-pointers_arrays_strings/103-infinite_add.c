@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stdlib.h>
 
 /**
  * *infinite_add - adds two numbers
@@ -21,7 +22,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	{
 		return (0);
 	}
-	r = n1 + n2;
+	*r = atoi(n1) + atoi(n2);
 
 	return (r);
 }
