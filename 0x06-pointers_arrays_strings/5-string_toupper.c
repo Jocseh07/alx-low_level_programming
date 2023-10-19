@@ -10,7 +10,7 @@
 
 char *string_toupper(char *c)
 {
-	int n, l;
+	int i, l;
 
 	l = strlen(c);
 
@@ -22,5 +22,5 @@ char *string_toupper(char *c)
 		}
 	}
 
-	return (s);
+	return (c);
 }
