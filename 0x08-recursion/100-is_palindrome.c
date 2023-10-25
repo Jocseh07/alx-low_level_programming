@@ -34,5 +34,5 @@ int check_palindrome(char *s, int a, int l)
 	if (a >= l)
 		return (1);
 
-	return (check_palindrome(s, a++, l--));
+	return (check_palindrome(s, a + 1, l - 1));
 }
