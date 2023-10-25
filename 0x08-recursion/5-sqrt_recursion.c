@@ -6,14 +6,6 @@
  * Return: -1 if does not have natural square root
  */
 
-int _sqrt_recursion(int n)
-{
-	if (n < 1)
-	{
-		return (-1);
-	}
-	return ( _sqrt_recursions(n, 0));
-}
 
 int _sqrt_recursions(int n, int a)
 {
@@ -24,4 +16,12 @@ int _sqrt_recursions(int n, int a)
 		return (a);
 
 	return (_sqrt_recursions(n, a+1));
+}
+int _sqrt_recursion(int n)
+{
+	if (n < 1)
+	{
+		return (-1);
+	}
+	return ( _sqrt_recursions(n, 0));
 }
