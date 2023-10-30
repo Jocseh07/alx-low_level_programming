@@ -21,6 +21,10 @@ char *str_concat(char *s1, char *s2)
 	while (s2[l2])
 		l2++;
 
+	s3 = malloc((sizeof(char) * (l1 + l2)) + 1);
+	if (s3 == NULL)
+		return (NULL);
+
 	s3 = strcat(s1, s2);
 
 	return (s3);
