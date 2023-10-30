@@ -28,11 +28,11 @@ int main(int argc __attribute__((unused)), char *argv[]__attribute__((unused)))
 		for (j = 0; j < strlen(argv[i]); j++)
 		{
 			if (!isdigit(argv[i][j]))
-				{
-					printf("Error\n");
-					return(1);
-				}
-		}	
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
 		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
