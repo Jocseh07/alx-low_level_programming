@@ -31,9 +31,8 @@ int main(int argc __attribute__((unused)), char *argv[]__attribute__((unused)))
 			printf("Error\n");
 			return (1);
 		}
-
-		printf("%d\n", sum);
 	}
+	printf("%d\n", sum);
 
 	return (0);
 }
