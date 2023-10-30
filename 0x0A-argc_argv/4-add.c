@@ -23,9 +23,9 @@ int main(int argc __attribute__((unused)), char *argv[]__attribute__((unused)))
 
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]))
+		if ((int) *argv[i])
 		{
-			sum += atoi(argv[i]);
+			sum += (int) *argv[i];
 		} else
 		{
 			printf("Error\n");
