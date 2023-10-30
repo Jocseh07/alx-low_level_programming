@@ -9,11 +9,11 @@
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[]__attribute__((unused)))
 {
 	int sum, i;
 
-	sum = 0
+	sum = 0;
 
 	if (argc == 1)
 	{
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	{
 		if (atoi(argv[i]))
 		{
-			sum += atoi(atoi(argv[i]));
+			sum += atoi(argv[i]);
 		} else
 		{
 			printf("Error\n");
