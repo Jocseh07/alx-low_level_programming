@@ -1,5 +1,7 @@
 #include "main.h"
 #include <string.h>
+#include <stdlib.h>
+
 /**
  * *_strdup - returns a pointer to a newly allocated
  * space in memory which contains copy of the string given
@@ -10,7 +12,7 @@
 char *_strdup(char *str)
 {
 	char *dup;
-	int l;
+	int l, i;
 
 	l = strlen(str);
 
