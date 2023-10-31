@@ -16,10 +16,16 @@ char *str_concat(char *s1, char *s2)
 	char *s3;
 	unsigned int l1 = 0, l2 = 0;
 
-	while (s1[l1])
-		l1++;
-	while (s2[l2])
-		l2++;
+	if (s1 != NULL)
+	{
+		while (s1[l1])
+			l1++;
+	}
+	if (s2 != NULL)
+	{
+		while (s2[l2])
+			l2++;
+	}
 
 	s3 = malloc((sizeof(char) * (l1 + l2)) + 1);
 	if (s3 == NULL)
