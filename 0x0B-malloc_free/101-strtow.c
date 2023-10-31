@@ -15,4 +15,5 @@ char **strtow(char *str)
 	if (str == NULL || str == "")
 		return (NULL);
 
+	return (str);
 }
