@@ -16,7 +16,7 @@ char **strtow(char *str)
 {
 	char **s;
 
-	strcat(&&&&&&&s, str);
+	strcat(&s, str);
 
 	if (str == NULL || strlen(str) == 0)
 		return (NULL);
