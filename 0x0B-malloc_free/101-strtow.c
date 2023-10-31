@@ -17,5 +17,5 @@ char **strtow(char *str)
 	if (str == NULL || strlen(str) == 0)
 		return (NULL);
 
-	return (*str);
+	return (**str);
 }
