@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
+
 /**
  * **strtow - splits a string into words
  * @str: string to be split
@@ -12,7 +14,7 @@
 
 char **strtow(char *str)
 {
-	if (str == NULL || str == "")
+	if (str == NULL || strlen(str) == 0)
 		return (NULL);
 
 	return (str);
