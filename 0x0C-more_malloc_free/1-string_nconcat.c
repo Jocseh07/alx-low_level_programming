@@ -39,11 +39,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n < l2)
 	{
 		while (i < (n + l1))
-			s3[i++] = s3[j++];
+			s3[i++] = s2[j++];
 	} else if (n >= l2)
 	{
 		while (i < (l1 + l2))
-			s3[i++] = s3[j++];
+			s3[i++] = s2[j++];
 	}
 
 	s3[i] = '\0';
