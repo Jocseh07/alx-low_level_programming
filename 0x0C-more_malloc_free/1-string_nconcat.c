@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	strcat(s3, s1);
 	strncat(s3, s2, n);
 
-	if (s3 = NULL)
+	if (s3 == NULL)
 		return (NULL);
 
 	return (s3);
