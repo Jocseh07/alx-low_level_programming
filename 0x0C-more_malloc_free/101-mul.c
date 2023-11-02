@@ -5,8 +5,8 @@
 
 /**
  * main - multiplies 2 positive integers
- * @num1: one integer
- * @num2: second integer
+ * @argc: number of parameters
+ * @argv: array of parameters
  * Return: multiplication
  */
 
@@ -31,5 +31,5 @@ int main(int argc, char *argv[])
 
 	printf("%d\n", *ptr);
 	free(ptr);
-	return (0);	
+	return (0);
 }
