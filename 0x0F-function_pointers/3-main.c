@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int a, b, total;
 	char c;
-	int (*func)(int)(int);
+	int (*func)(int, int);
 
 	if (argc != 4)
 	{
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	}
 
 	a = atoi(argv[1]);
-	b = atoi(argv[2]);
+	b = atoi(argv[3]);
 
 	func = get_op_func(argv[2]);
 
@@ -43,3 +43,4 @@ int main(int argc, char *argv[])
 
 	printf("%d\n", total);
 	return (0);
+}
