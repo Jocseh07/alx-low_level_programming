@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <string.h>
 /**
  * *add_node - add new node to beginning of linked list
  * @head: double pointer to linked list
