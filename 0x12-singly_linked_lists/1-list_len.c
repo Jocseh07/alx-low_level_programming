@@ -14,7 +14,7 @@ size_t list_len(const list_t *h)
 	whle (h)
 	{
 		n++;
-		h->next;
+		h = h->next;
 	}
 
 	return (n);
