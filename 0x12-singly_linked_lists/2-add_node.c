@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <string.h>
+
 /**
  * *add_node - add new node to beginning of linked list
  * @head: double pointer to linked list
@@ -20,7 +21,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (!new)
 		return (NULL);
 
-	strcpy(new->str, str);
+	new->str = strdup(str);
 	new->len = len;
 	new->next = (*head);
 	(*head) = new;
