@@ -4,19 +4,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-typedef struct node *nodePtr;
-
 /**
  * struct list_s - singly linked list
  * @str: string
  * @next: points to next node
  */
 
-struct list_s
+typedef struct list_s
 {
 	char *str;
-	unsigned int l;
-	nodePtr next;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
 size_t print_list(const list_t *h);
