@@ -4,7 +4,7 @@
 * *get_nodeint_at_index - returns the nth node of linked list
 * @head: pointer to first node
 * @index: index of node
-* 
+*
 * Return: NULL or nth node of linked list
 */
 
