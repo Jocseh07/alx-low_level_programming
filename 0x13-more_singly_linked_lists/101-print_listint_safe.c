@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* print_listint - prints a linked list
+* print_listint_safe - prints a linked list
 * @head: pointer to first node of linked list
 * Return: 98 if it fails or number of nodes in list
 */
