@@ -4,6 +4,8 @@
 * clear_bit - sets the value of a bit to 0 at given index
 * @n: value to set the bit
 * @index: index of the bit to set
+*
+* Return: 1 if it worked and -1 if error
 */
 
 int clear_bit(unsigned long int *n, unsigned int index)
