@@ -14,16 +14,16 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 
-	for (a = 0; b[a]; b++)
+	for (a = 0; b[a]; a++)
 	{
 		if (b[a] != '0' && b[a] != '1')
 			return (0);
 	}
 
-	for (i = a; i < 0; i--)
+	for (i = a - 1; i >= 0; i--)
 	{
 		if (b[i] == '1')
-			total += (power * b[i]);
+			total += power;
 		power *= 2;
 	}
 
