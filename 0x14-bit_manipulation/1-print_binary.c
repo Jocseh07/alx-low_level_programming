@@ -7,8 +7,8 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int r[32];
-	int b = 0, i;
+	unsigned long int a;
+	int s = 0;
 
 	if (n == 0)
 	{
@@ -16,14 +16,14 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	while (n > 0)
+	for (a = n; (a >>= 1) > 0; s++)
+		;
+
+	for (; s >= 0; s--)
 	{
-		r[b] = (n % 2);
-		n /= 2;
-		b++;
-	}
-	for (i = b - 1; i >= 0; i--)
-	{
-		_putchar(r[i] + '0');
+		if ((n >> s) & 1)
+			_putchar('1');
+		else
+			_putchar('0');
 	}
 }
