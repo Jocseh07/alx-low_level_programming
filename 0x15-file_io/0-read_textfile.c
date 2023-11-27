@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (name == NULL)
 		return (0);
 
-	o = open(filename, O_RDONLY);
+	o = open(filename, 'r');
 	r = read(o, name, letters);
 	w = write(1, name, r);
 
