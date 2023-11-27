@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
 * read_textfile - reads a text file and prints to standard output
@@ -15,17 +14,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *name;
 
 	if (filename == NULL)
-		return (NULL);
-
-	name = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
 		return (0);
 
-	o = open(filename, O_RDONLY);
-	r = read(o, name, letters);
-	w = write(STDOUT_FILENO, name, r);
+	name = malloc(sizeof(char) * letters);
+	if (name == NULL)
+		return (0);
 
-	free(buffer);
+	o = open(filename, 'r');
+	r = read(o, name, letters);
+	w = write(1, name, r);
+
+	if (o == -1 || r == -1 || w == -1)
+	{
+		free(name);
+		return (0);
+	}
+	free(name);
 	close(o);
 
 	return (w);
