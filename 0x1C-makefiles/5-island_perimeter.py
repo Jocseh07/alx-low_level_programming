@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Return perimeter of island defined in grid."""
 
+
 def island_perimeter(grid):
     """Return perimeter of island.
-    
+
     Args:
         grid (list): list of integers
     """
@@ -11,7 +12,7 @@ def island_perimeter(grid):
     width = len(grid[0])
     edge = 0
     size = 0
-    
+
     for a in range(height):
         for b in range(width):
             if grid[a][b] == 1:
