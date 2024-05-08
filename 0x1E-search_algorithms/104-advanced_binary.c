@@ -28,14 +28,14 @@ int search(int *array, size_t size, int value)
 		printf("%s %d", s, array[a]);
 	}
 	printf("\n");
-	if (array[mid - 2] && value == array[mid - 2])
-		return ((int)mid - 2);
-	if (array[mid - 1] && value == array[mid - 1])
-		return ((int)mid - 1);
 	if (value == array[mid])
+	{
+		if (mid > 0)
+			return (search(array, mid + 1, value));
 		return ((int)mid);
+	}
 	if (value < array[mid])
-		return (search(array, mid, value));
+		return (search(array, mid + 1, value));
 	mid++;
 	return (search(array + mid, size - mid, value) + mid);
 }
