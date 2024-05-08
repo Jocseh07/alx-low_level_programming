@@ -1,0 +1,12 @@
+{
+	"files.associations": {
+		"test_params_create": "plaintext",
+		"sxhkdrc": "shellscript",
+		"*.py": "python",
+		"array": "c",
+		"string": "c",
+		"string_view": "c",
+		"span": "c",
+		"list": "c"
+	}
+}
